@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/alumnos",
+      "handler": "Alumno.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alumnos/count",
+      "handler": "Alumno.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alumnos/:_id",
+      "handler": "Alumno.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/alumnos",
+      "handler": "Alumno.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/alumnos/:_id",
+      "handler": "Alumno.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/alumnos/:_id",
+      "handler": "Alumno.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

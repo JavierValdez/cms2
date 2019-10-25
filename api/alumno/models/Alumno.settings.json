@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "alumno",
+  "info": {
+    "name": "alumno",
+    "description": "Nombre alumno\n"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Apellido": {
+      "type": "string"
+    },
+    "Edad": {
+      "type": "integer"
+    },
+    "Grado": {
+      "type": "string"
+    },
+    "carrera": {
+      "model": "carrera",
+      "via": "alumnos"
+    },
+    "c_alumno": {
+      "type": "integer"
+    },
+    "c_carrera1": {
+      "type": "integer"
+    },
+    "cursos": {
+      "collection": "curso",
+      "via": "alumnos",
+      "dominant": true
+    },
+    "notas": {
+      "collection": "notas",
+      "via": "alumno"
+    }
+  }
+}

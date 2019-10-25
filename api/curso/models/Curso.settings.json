@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "curso",
+  "info": {
+    "name": "curso",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Nombre_curso": {
+      "type": "string"
+    },
+    "c_curso": {
+      "type": "integer"
+    },
+    "promedio": {
+      "type": "integer"
+    },
+    "alumnos": {
+      "collection": "alumno",
+      "via": "cursos"
+    },
+    "profesor": {
+      "model": "profesor",
+      "via": "cursos"
+    }
+  }
+}

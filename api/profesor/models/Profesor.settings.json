@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "profesor",
+  "info": {
+    "name": "profesor",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Apellido": {
+      "type": "string"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Telefono": {
+      "type": "integer"
+    },
+    "alpros": {
+      "collection": "alpro",
+      "via": "profesors"
+    },
+    "c_profesor": {
+      "type": "integer"
+    },
+    "cursos": {
+      "collection": "curso",
+      "via": "profesor"
+    }
+  }
+}

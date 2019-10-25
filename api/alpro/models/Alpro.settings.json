@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "alpro",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "c_profesor1": {
+      "type": "string"
+    },
+    "c_alumno1": {
+      "type": "string"
+    },
+    "profesors": {
+      "collection": "profesor",
+      "dominant": true,
+      "via": "alpros"
+    }
+  }
+}

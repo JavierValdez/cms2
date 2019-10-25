@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "notas",
+  "info": {
+    "name": "notas",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Primer_bimestre": {
+      "type": "integer"
+    },
+    "Segundo_bimestre": {
+      "type": "integer"
+    },
+    "Tercer_Bimestre": {
+      "type": "integer"
+    },
+    "Cuarto_Bimestre": {
+      "type": "integer"
+    },
+    "Promedio": {
+      "type": "integer"
+    },
+    "Extraordinario": {
+      "type": "integer"
+    },
+    "alumno": {
+      "model": "alumno",
+      "via": "notas"
+    },
+    "curso": {
+      "model": "curso"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "carrera",
+  "info": {
+    "name": "carrera",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "N_carrera": {
+      "type": "string"
+    },
+    "Duracion": {
+      "type": "integer"
+    },
+    "alumnos": {
+      "collection": "alumno",
+      "via": "carrera"
+    },
+    "c_carrera": {
+      "type": "integer"
+    }
+  }
+}

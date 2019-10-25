@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/alpros",
+      "handler": "Alpro.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alpros/count",
+      "handler": "Alpro.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alpros/:_id",
+      "handler": "Alpro.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/alpros",
+      "handler": "Alpro.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/alpros/:_id",
+      "handler": "Alpro.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/alpros/:_id",
+      "handler": "Alpro.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
